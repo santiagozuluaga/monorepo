@@ -23,4 +23,4 @@ jobs:
         run: npm install
 
       - name: Run Tests (Turbo)
-        run: npm run test --filter=...[origin/testing-monorepo-with-turborepo] --continue --parallel
+        run: npm run test --filter=...[origin/testing-monorepo-with-turborepo]
