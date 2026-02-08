@@ -11,7 +11,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Crucial para que Turbo pueda comparar con commits anteriores
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -23,5 +23,4 @@ jobs:
         run: npm install
 
       - name: Run Tests (Turbo)
-        # El comando mágico:
-        run: npm run test --filter=...[origin/testing-monorepo-with-turborepo]
+        run: npm run test --filter=...[origin/testing-monorepo-with-turborepo] --continue --parallel
