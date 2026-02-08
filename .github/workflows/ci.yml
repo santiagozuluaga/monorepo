@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: ["main"]
+    branches: ["testing-monorepo-with-turborepo"]
   pull_request:
     types: [opened, synchronize, reopened]
 
@@ -26,4 +26,4 @@ jobs:
 
       - name: Run Tests (Turbo)
         # El comando mágico:
-        run: npx turbo test --filter=...[origin/main]
+        run: npx turbo test --filter=...[origin/testing-monorepo-with-turborepo]
