@@ -24,4 +24,4 @@ jobs:
 
       - name: Run Tests (Turbo)
         # El comando mágico:
-        run: npx turbo test --filter=...[origin/testing-monorepo-with-turborepo]
+        run: npm run test --filter=...[origin/testing-monorepo-with-turborepo]
