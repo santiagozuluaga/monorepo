@@ -2,6 +2,9 @@
   "name": "monorepo",
   "private": true,
   "scripts": {
+    "test": "turbo run test",
+    "test:web": "turbo run web#test",
+    "test:docs": "turbo run docs#test",
     "dev:web": "turbo run web#dev",
     "dev:docs": "turbo run docs#dev"
   },
