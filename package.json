@@ -1,0 +1,16 @@
+{
+  "name": "monorepo",
+  "private": true,
+  "scripts": {
+    "dev:web": "turbo run web#dev",
+    "dev:docs": "turbo run docs#dev"
+  },
+  "packageManager": "npm@8.5.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "turbo": "^2.8.3"
+  }
+}
