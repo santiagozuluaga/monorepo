@@ -1,8 +1,6 @@
 name: CI
 
 on:
-  push:
-    branches: ["testing-monorepo-with-turborepo"]
   pull_request:
     types: [opened, synchronize, reopened]
 
