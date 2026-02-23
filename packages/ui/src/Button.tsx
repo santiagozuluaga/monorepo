@@ -6,15 +6,16 @@ interface ButtonProps extends ComponentPropsWithRef<'button'> {
 }
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ children, className, disabled, ...restProps }, ref) => {
+  ({ children, className, disabled, type, ...restProps }, ref) => {
     return (
       <button
+        type={type || 'button'}
         ref={ref}
         disabled={disabled}
         className={className}
         {...restProps}
       >
-        {children}
+
       </button>
     );
   }
